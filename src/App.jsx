@@ -88,7 +88,7 @@ function Home() {
             La kinesiología es una disciplina de salud enfocada en el estudio del movimiento humano. Es fundamental para tratar lesiones, aliviar dolores musculoesqueléticos y rehabilitar la función física. Puede ser una opción efectiva si experimenta dolor de espalda, problemas articulares o necesita recuperación post-lesión.
           </p>
           {/* Internal Link using React Router */}
-          <Link to="/salud/kine/clientes" className="link-button">Ver Guía de Kinesiología &rarr;</Link>
+          <Link to="/salud/kine/cliente" className="link-button">Ver Guía de Kinesiología &rarr;</Link>
         </div>
       </section>
 
@@ -114,7 +114,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Route for the specific landing page */}
-        <Route path="/salud/kine/clientes" element={<KineLanding />} />
+        <Route path="/salud/kine/cliente" element={<KineLanding />} />
+        <Route path="*" element={
+          <div style={{ padding: '2rem', textAlign: 'center', color: '#333' }}>
+            <h2>404 - Página no encontrada</h2>
+            <p>La ruta que buscas no existe.</p>
+            <Link to="/" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Volver al inicio</Link>
+          </div>
+        } />
       </Routes>
     </Router>
   );
