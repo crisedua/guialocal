@@ -1,0 +1,228 @@
+.kinesiologia-page {
+    --color-bg-main: #FDFBF7;
+    --color-bg-purple: #EBE8F4;
+    --color-bg-card: #FFFFFF;
+    --color-text-dark: #1F1F1F;
+    --color-text-muted: #5A5A5A;
+    --color-primary: #8E7CC3;
+    /* Soft purple */
+    --color-primary-dark: #6D5B9E;
+    --color-secondary: #D4C4FB;
+    --radius-lg: 24px;
+    --radius-md: 16px;
+    --radius-sm: 8px;
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    font-family: var(--font-body);
+    background-color: var(--color-bg-main);
+    color: var(--color-text-dark);
+    line-height: 1.6;
+}
+
+.kinesiologia-page * {
+    box-sizing: border-box;
+}
+
+.kinesiologia-page section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kinesiologia-page h1,
+.kinesiologia-page h2,
+.kinesiologia-page h3,
+.kinesiologia-page h4 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+/* Scoped Classes from original App.css */
+.kinesiologia-page .hero-section {
+    background-color: var(--color-bg-purple);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    padding: 120px 20px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.kinesiologia-page .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.kinesiologia-page .hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-dark);
+}
+
+.kinesiologia-page .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+}
+
+.kinesiologia-page .btn-primary {
+    background-color: var(--color-text-dark);
+    color: #fff;
+    padding: 18px 40px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.kinesiologia-page .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.kinesiologia-page .btn-primary.inverse {
+    background-color: #fff;
+    color: var(--color-text-dark);
+}
+
+.kinesiologia-page .btn-primary.inverse:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1);
+}
+
+.kinesiologia-page .card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.3s ease;
+    /* Reset generic card styles if inherited */
+    border: none;
+}
+
+.kinesiologia-page .card:hover {
+    transform: translateY(-5px);
+}
+
+.kinesiologia-page .warning-card {
+    background-color: #FFF8F8;
+    border: 1px solid #FADCDC;
+}
+
+.kinesiologia-page .warning-card h3 {
+    color: #B00020;
+}
+
+.kinesiologia-page .quick-answer {
+    background-color: #fff;
+    margin-top: -40px;
+    position: relative;
+    z-index: 3;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.kinesiologia-page .quick-answer p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.kinesiologia-page .quick-answer h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.kinesiologia-page .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.kinesiologia-page .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.kinesiologia-page .bullet-list {
+    list-style: none;
+}
+
+.kinesiologia-page .bullet-list li {
+    margin-bottom: 16px;
+    padding-left: 28px;
+    position: relative;
+}
+
+.kinesiologia-page .bullet-list li::before {
+    content: "•";
+    color: var(--color-primary);
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.kinesiologia-page .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.kinesiologia-page .step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.kinesiologia-page .step-number {
+    background: var(--color-secondary);
+    color: var(--color-text-dark);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.kinesiologia-page .faq-item {
+    border-bottom: 1px solid #eee;
+    padding: 24px 0;
+}
+
+.kinesiologia-page .faq-question {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.kinesiologia-page footer {
+    background: var(--color-text-dark);
+    color: #fff;
+    padding: 80px 20px;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    margin-top: 80px;
+    text-align: left;
+    /* Override main site footer alignment if needed */
+}
+
+.kinesiologia-page footer a {
+    color: #aaa;
+    text-decoration: none;
+}
