@@ -112,8 +112,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        {/* Route for the specific landing page */}
+        <Route path="/" element={<KineLanding />} />
+        {/* Route for the specific landing page (kept for compatibility) */}
         <Route path="/salud/kine/cliente" element={<KineLanding />} />
         <Route path="*" element={
           <div style={{ padding: '2rem', textAlign: 'center', color: '#333' }}>
