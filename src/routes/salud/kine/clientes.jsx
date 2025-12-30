@@ -1,5 +1,7 @@
 import React from 'react';
 import './KineLanding.css';
+import ReservationForm from '../../../components/ReservationForm';
+
 
 function KineLanding() {
     return (
@@ -165,11 +167,8 @@ function KineLanding() {
                             <p><strong>Teléfono:</strong> [(555) 123-4567]</p>
                             <p><strong>Email:</strong> [contacto@nombreclinica.com]</p>
                         </div>
-                        <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                            <h3>¿Listo para sentirse mejor?</h3>
-                            <div style={{ marginTop: '20px' }}>
-                                <a href="#book" className="btn-primary inverse">Reserve una Evaluación Gratuita</a>
-                            </div>
+                        <div>
+                            <ReservationForm />
                         </div>
                     </div>
                 </footer>
